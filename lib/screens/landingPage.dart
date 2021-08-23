@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:user_profile/screens/details.dart';
 import 'package:user_profile/widgets/customButton.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 import '../constants.dart';
 
@@ -18,7 +19,7 @@ class _LandingPageState extends State<LandingPage> {
     return Scaffold(
       backgroundColor: myWhite,
       body: Padding(
-        padding: const EdgeInsets.only(top: 10.0),
+        padding: const EdgeInsets.only(top: 0.0),
         child: Column(
           // crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -51,21 +52,35 @@ class _LandingPageState extends State<LandingPage> {
             SizedBox(
               height: 10,
             ),
-            Text(
-              'Hi , welcome to ZURI',
-              style: GoogleFonts.nunitoSans(
-                fontSize: 16,
-                color: myBlack,
-                fontWeight: FontWeight.w900,
+            AnimatedTextKit(repeatForever: true, animatedTexts: [
+              ColorizeAnimatedText(
+                'Hi , welcome to ZURI',
+                colors: kMyColor,
+                // speed: Duration(seconds: 1),
+                textStyle: GoogleFonts.nunitoSans(
+                  fontSize: 16,
+                  color: myBlack,
+                  fontWeight: FontWeight.w900,
+                ),
               ),
-            ),
+            ]
+                // 'Hi , welcome to ZURI',
+
+                ),
             SizedBox(
               height: 24,
             ),
-            Text(
-              'Click The Button Below to Get Started',
-              style: GoogleFonts.nunitoSans(
-                  fontSize: 16, color: myBlack, fontWeight: FontWeight.w700),
+            AnimatedTextKit(
+              repeatForever: true,
+              animatedTexts: [
+                TyperAnimatedText(
+                  'Click The Button Below to Get Started',
+                  textStyle: GoogleFonts.nunitoSans(
+                      fontSize: 16,
+                      color: myBlack,
+                      fontWeight: FontWeight.w700),
+                ),
+              ],
             ),
             SizedBox(
               height: 70,
