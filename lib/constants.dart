@@ -6,7 +6,34 @@ const Color myWhite = Colors.white;
 const Color myBlack = Colors.black;
 const Color myGrey = Color(0xffEEEEEE);
 const Color kMynaveyBlue = Color(0XFF162337);
-const myLightGrey = Color(0xFFC4C4C4);
+const Color myLightGrey = Color(0xFFC4C4C4);
+const Color myPurple = Color(0xff9c27b0);
+const Color myRed = Color(0xfff44336);
+const Color myYellow = Color(0xffffEB3B);
+
+const kMybordeeStyle = UnderlineInputBorder(
+  borderSide: BorderSide(color: Colors.transparent),
+);
+
+const List<Color> kMyColor = [
+  // ,
+  Color(0XFF162337),
+  Color(0xff42CB91),
+  Color(0xfff44336),
+  Color(0xFF0E5357),
+  Color(0xff304ffe),
+  Color(0xffffEB3B),
+  Color(0xff455a64),
+  Color(0xfff4511e),
+  Color(0XFF162337),
+  Color(0xff42CB91),
+  Color(0xfff44336),
+  Color(0xFF0E5357),
+  Color(0xff9c27b0),
+  Color(0xff455a64),
+  Color(0xfff4511e),
+  Color(0XFF162337),
+];
 
 class Const {
   static final List<BoxShadow> boxShadow = [

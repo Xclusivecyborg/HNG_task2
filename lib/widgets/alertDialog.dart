@@ -30,7 +30,7 @@ class AlertWidget extends StatelessWidget {
                 backgroundColor: MaterialStateProperty.all(kMynaveyBlue),
               ),
               onPressed: () {
-                return Navigator.of(context).pop();
+                return Navigator.pop(context);
               },
               child: Text(
                 "Click to go back",
